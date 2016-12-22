@@ -1,0 +1,51 @@
+
+este documento está escrito em restext_
+
+
+notas ambiente Python
+=====================
+
+Usando o virtualenvwrapper_ para ambientes Python
+
+
+	$> sudo pip install virtualenv
+
+	...
+
+	$> sudo pip install virtualenvwrapper
+
+	...
+
+
+
+Criar um virtualenv para ...
+
+
+	$> mkvirtualenv --python /usr/bin/python2.7 NOMEDOENV
+
+
+
+Para sair: 
+	deactivate
+
+Para entrar novamente:
+	workon <nomedoenv>
+
+
+Para instalar bibliotecas dentro do seu virtualen use o `pip`.
+
+	$> pip install <nomedalib>
+
+ex.?
+
+	$> pip install django==1.8
+
+
+Listar todo os pacotes instalados no venv
+
+	$> pip freeze
+
+
+.. _restext: http://docutils.sourceforge.net/docs/user/rst/quickref.html
+
+.. _virtualenvwrapper: https://virtualenvwrapper.readthedocs.io/en/latest/

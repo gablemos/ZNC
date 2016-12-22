@@ -1,0 +1,36 @@
+<p><label for="id_nome">Nome:</label> <input id="id_nome" maxlength="50" name="nome" type="text" /></p>\n<p><label for="id_cpf">Cpf:</label> <input id="id_cpf" maxlength="14" name="cpf" type="text" /></p>\n<p><label for="id_link_github">Link github:</label> <input id="id_link_github" maxlength="100" name="link_github" type="url" /></p>\n<p><label for="id_pretencao_min">Pretencao min:</label> <input id="id_pretencao_min" name="pretencao_min" step="any" type="number" /></p>\n<p><label for="id_pretencao_max">Pretencao max:</label> <input id="id_pretencao_max" name="pretencao_max" step="any" type="number" /></p>\n<p><label for="id_tipo_curriculo">Tipo curriculo:</label> <select id="id_tipo_curriculo" name="tipo_curriculo">\n<option value="1" selected="selected">Estagio Dev</option>\n<option value="2">Estagio Adm</option>\n<option value="3">Desenvolvedor</option>\n<option value="4">Gestor</option>\n</select></p>\n<p><label for="id_telefone">Telefone:</label> <input id="id_telefone" maxlength="15" name="telefone" type="text" /></p>\n<p><label for="id_email">Email:</label> <input id="id_email" maxlength="100" name="email" type="email" /></p>'
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>teste de POST http</title>
+</head>
+<body>
+<h1>Formulário</h1>
+
+<form action="" method="post">
+{% csrf_token %}
+<label>Teste de texto<input id='id_testehttp' name='campo_teste' type="text"></input></label>
+
+
+<label>Linguagem <input id='linguagem1' type="text" name="nome"></input></label>
+<label>Lingiagem <input id='linguagem2' type="text" name="nome"></input></label>
+
+<input type="submit"></input>
+</form>	
+
+</body>
+</html>
+
+def testehttp(request):
+	#import pdb; pdb.set_trace()
+	if request.method=="GET":
+		print " >> > > >> leu a URL"
+		print request.GET
+	else:
+		print " > > > > >  Enviou algo pra URL"
+		print request.POST
+
+	return render(request, 'curriculo/testehttp.html')

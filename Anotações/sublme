@@ -1,0 +1,62 @@
+Sublime:
+
+Ctrl + Shif + P = funçoes sublime
+>ssp (perspectiva python)
+
+Ctrl + p = localiza qualquer arquivo existente, texto
+
+Ctrl + B = Run
+
+Ctrl + Break = Stop
+
+
+LINUX:
+
+python ./arquivo.py
+
+cd /home/gabriel/Documentos/
+
+Ctrl + Tab = autocomplete terminal
+
+Work:
+Timing de produção
+
+
+
+Estudar:
+Alura
+CodeAcademy
+
+react?
+json?
+javascript?
+
+
+Django (1.6.x)
+
+https://media.readthedocs.org/pdf/django/1.6.x/django.pdf
+
+python manage.py syncdb -> cria db
+django-admin.py startproject nome_do_projeto -> cria projeto
+python manage.py runserver -> inicia o servidor
+python manage.py startapp nome_aplicaca -> cria uma nova aplicacao (deve ser tipo uma classe) e deve ser icluida no arquivo: 
+											settings.py em: 
+											>>>INSTALLED_APPS = 'nome_aplicacao'
+
+
+
+    models.CharField - assim é como você define um texto com um número limitado de caracteres. (varchar?)
+    models.TextField - este é para textos longos sem um limite. Será ideal para um conteúdo de post de blog, certo?
+    models.DateTimeField - este é uma data e hora.(date)
+    models.ForeignKey - este é um link para outro modelo.(FK)
+    Mais info em: https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types
+
+
+https://tutorial.djangogirls.org/pt/ (top 10)
+z3n3c32014
+
+https://getbootstrap.com/
+
+PEP8
+
+Luciano Ramalho - Unicode
